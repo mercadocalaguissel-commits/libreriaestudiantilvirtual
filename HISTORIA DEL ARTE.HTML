@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comprar - Librería Estudiantil JP</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0fdf4;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .formulario {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0f172a;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            background: #22c55e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="formulario">
+
+        <h1>Formulario de compra</h1>
+
+        <form action="https://formsubmit.co/manuelyugi47@gmail.com"
+              method="POST">
+
+            <label>Producto</label>
+
+            <input
+                type="text"
+                id="producto"
+                name="producto"
+                readonly>
+
+            <label>Precio</label>
+
+            <input
+                type="text"
+                id="precio"
+                name="Precio"
+                readonly>
+
+            <label>Nombre completo</label>
+
+            <input
+                type="text"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required>
+
+            <label>Correo electrónico</label>
+
+            <input
+                type="email"
+                name="correo"
+                placeholder="Tu correo"
+                required>
+
+            <label>Cantidad</label>
+
+            <input
+                type="number"
+                name="cantidad"
+                min="1"
+                value="1"
+                required>
+
+            <label>Dirección</label>
+
+            <textarea
+                name="direccion"
+                placeholder="Escribe tu dirección"
+                required></textarea>
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="Nueva compra - Librería Estudiantil JP">
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="false">
+
+            <input
+                type="hidden"
+                name="_template"
+                value="table">
+
+            <button type="submit">
+                Confirmar compra
+            </button>
+
+        </form>
+
+    </div>
+
+
+   <script>
+
+    const parametros = new URLSearchParams(window.location.search);
+
+    const producto = parametros.get("producto");
+    const precio = parametros.get("precio");
+
+    document.getElementById("producto").value =
+        producto ? decodeURIComponent(producto) : "HISTORIA DEL ARTE";
+
+    document.getElementById("precio").value =
+        precio ? "Bs. " + precio : "35BS";
+
+</script>
+
+</body>
+
+</html>

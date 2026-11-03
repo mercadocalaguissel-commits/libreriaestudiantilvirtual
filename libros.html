@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Libros - Librería Estudiantil JP</title>
+
+    <link rel="stylesheet" href="libros.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= MENÚ ================= -->
+
+    <header class="header">
+        <nav class="nav">
+
+            <a href="index.html" class="logo">
+                📚 JP
+            </a>
+
+            <a href="index.html" class="cta">
+                <i class="fa-solid fa-arrow-left"></i>
+                Volver
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= LIBROS ================= -->
+
+    <main>
+
+        <section class="section productos-page">
+
+            <div class="section-title">
+
+                <span>CATÁLOGO</span>
+
+                <h2>📚 Nuestros Libros</h2>
+
+                <p>Encuentra el libro que necesitas.</p>
+
+            </div>
+
+
+            <div class="productos-grid">
+
+                <!-- LIBRO 1 -->
+
+                <div class="producto-card">
+
+                    <img src="matematicas.png"
+                        alt="Libro de Matemáticas">
+
+                    <div class="producto-info">
+
+                        <h3>Libro de Matemáticas</h3>
+
+                        <p>
+                            Libro educativo para estudiantes,
+                            con ejercicios y actividades.
+                        </p>
+
+                        <div class="precio">Bs. 45</div>
+
+                        <a href="#contacto" class="btn">
+                            Pedir por formulario
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </a>
+
+                        <button type="button" class="btn btn-carrito">
+                            Agregar al carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- LIBRO 2 -->
+
+                <div class="producto-card">
+
+                    <img src="ciencias naturales.webp"
+                        alt="Libro de Ciencias Naturales">
+
+                    <div class="producto-info">
+
+                        <h3>Libro de Ciencias Naturales</h3>
+
+                        <p>
+                            Material educativo para aprender
+                            sobre ciencias y naturaleza.
+                        </p>
+
+                        <div class="precio">Bs. 40</div>
+
+                        <a href="#contacto" class="btn">
+                            Pedir por formulario
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </a>
+
+                        <button type="button" class="btn btn-carrito">
+                            Agregar al carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- LIBRO 3 -->
+
+                <div class="producto-card">
+
+                    <img src="historia.webp"
+                        alt="Libro de Historia">
+
+                    <div class="producto-info">
+
+                        <h3>Libro de Historia</h3>
+
+                        <p>
+                            Información histórica para
+                            estudiantes y tareas escolares.
+                        </p>
+
+                        <div class="precio">Bs. 35</div>
+
+                        <a href="#contacto" class="btn">
+                            Pedir por formulario
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </a>
+
+                        <button type="button" class="btn btn-carrito">
+                            Agregar al carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- LIBRO 4 -->
+
+                <div class="producto-card">
+
+                    <img src="diccionario.png"
+                        alt="Diccionario">
+
+                    <div class="producto-info">
+
+                        <h3>Diccionario</h3>
+
+                        <p>
+                            Diccionario para estudiantes,
+                            ideal para tareas y trabajos.
+                        </p>
+
+                        <div class="precio">Bs. 30</div>
+
+                        <a href="#contacto" class="btn">
+                            Pedir por formulario
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </a>
+
+                        <button type="button" class="btn btn-carrito">
+                            Agregar al carrito
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section id="contacto" class="section contacto">
+
+            <div class="section-title">
+
+                <span>REALIZAR PEDIDO</span>
+
+                <h2>Solicitar un producto</h2>
+
+                <p>
+                    Completa el formulario para solicitar
+                    el libro que necesitas.
+                </p>
+
+            </div>
+
+
+            <form
+                id="formulario"
+                action="https://formsubmit.co/manuelyugi47@gmail.com"
+                method="POST">
+
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required>
+
+                <input
+                    type="email"
+                    name="correo"
+                    placeholder="Tu correo"
+                    required>
+
+                <input
+                    type="text"
+                    name="ubicacion"
+                    placeholder="Tu ubicación (zona, barrio o dirección)"
+                    required>
+
+                    <!-- MÉTODO DE PAGO -->
+
+<select name="metodo_pago" required>
+    <option value="" disabled selected>
+        Selecciona tu método de pago
+    </option>
+
+    <option value="Efectivo">Pago en efectivo</option>
+
+    <option value="QR">Pago mediante QR</option>
+</select>
+
+                <input
+                    type="text"
+                    name="producto"
+                    placeholder="Nombre del libro"
+                    required>
+
+                <textarea
+                    name="mensaje"
+                    placeholder="Cantidad o consulta..."
+                    required></textarea>
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Pedido de libros - Librería Estudiantil JP">
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false">
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table">
+
+                <button type="submit" class="btn">
+                    Enviar pedido
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            📚 Librería Estudiantil JP
+        </div>
+
+        <p>Tu espacio para aprender y crear.</p>
+
+        <p>
+            © 2026 Librería Estudiantil JP
+            <br>
+            Santa Cruz - Bolivia
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CARRITO DE LIBROS ================= -->
+
+    <script src="carrito-libros.js"></script>
+
+</body>
+</html>

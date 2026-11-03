@@ -1,0 +1,867 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #ffffff;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background: #0f172a;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+.nav {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding: 15px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-decoration: none;
+
+    color: #22c55e;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+
+/* MENÚ */
+
+.menu {
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #22c55e;
+}
+
+
+/* BOTÓN CONTÁCTANOS */
+
+.cta {
+    text-decoration: none;
+
+    background: #22c55e;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #16a34a;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 150px 8% 80px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #f0fdf4,
+            #dcfce7
+        );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    color: #16a34a;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 20px 0;
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    color: #0f172a;
+}
+
+.hero p {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    background: #22c55e;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16a34a;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 5px 15px rgba(34, 197, 94, 0.30);
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.section {
+    padding: 90px 8%;
+}
+
+
+/* TÍTULOS */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #16a34a;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin-top: 10px;
+
+    color: #0f172a;
+
+    font-size: 40px;
+}
+
+.section-title p {
+    margin-top: 12px;
+
+    color: #64748b;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   SOBRE NOSOTROS
+========================= */
+
+.about {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.about-text h3 {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+
+    color: #0f172a;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+.about-image img {
+    width: 100%;
+
+    max-height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.services {
+    background:
+        linear-gradient(
+            135deg,
+            #f0fdf4,
+            #ecfdf5
+        );
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.cards {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 40px auto 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+/* TARJETA */
+
+.card {
+    width: 350px;
+
+    max-width: 100%;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    border: 2px solid transparent;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    border-color: #22c55e;
+
+    box-shadow:
+        0 15px 35px rgba(34, 197, 94, 0.25);
+}
+
+
+/* IMAGEN DE TARJETA */
+
+.card-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+
+/* ICONO */
+
+.card-icon {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #22c55e;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+
+/* CONTENIDO */
+
+.card-content {
+    padding: 25px;
+
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-bottom: 12px;
+
+    color: #0f172a;
+
+    font-size: 24px;
+}
+
+.card-content p {
+    margin-bottom: 18px;
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+.card-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #16a34a;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* PRODUCTOS */
+
+.producto {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.4s;
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.producto:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(34, 197, 94, 0.25);
+}
+
+
+/* IMAGEN DEL PRODUCTO */
+
+.producto img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+/* NOMBRE DEL PRODUCTO */
+
+.producto h3 {
+    font-size: 22px;
+
+    margin: 15px 0 10px;
+
+    color: #0f172a;
+}
+
+
+/* DESCRIPCIÓN */
+
+.producto p {
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    color: #64748b;
+}
+
+
+/* PRECIO */
+
+.producto strong {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    color: #16a34a;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    background: #f0fdf4;
+
+    text-align: center;
+}
+
+.contacto form {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* INPUTS */
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 2px solid #d1d5db;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+    border-color: #22c55e;
+
+    box-shadow:
+        0 0 10px rgba(34, 197, 94, 0.20);
+}
+
+
+/* TEXTAREA */
+
+.contacto textarea {
+    height: 140px;
+
+    resize: vertical;
+}
+
+
+/* BOTÓN ENVIAR */
+
+.submit-btn {
+    width: 100%;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.footer-content {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.footer-logo {
+    margin-bottom: 12px;
+
+    color: #22c55e;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+footer p {
+    margin: 8px 0;
+
+    color: #cbd5e1;
+
+    line-height: 1.5;
+}
+
+
+/* REDES SOCIALES */
+
+.social {
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #1e293b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: #22c55e;
+
+    transform: translateY(-4px);
+}
+
+footer hr {
+    border: none;
+
+    height: 1px;
+
+    background: #334155;
+
+    margin: 25px 0;
+}
+
+
+/* =========================
+   BOTÓN VOLVER ARRIBA
+========================= */
+
+#topBtn {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.20);
+
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background: #16a34a;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav {
+        width: 92%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .cta {
+        padding: 9px 14px;
+
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 130px 7% 70px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 70px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    /* AQUÍ SE CENTRAN EN CELULAR */
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
+.contacto select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.contacto select:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.2);
+}
